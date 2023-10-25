@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ZodiakSimbolStyle.css" type="text/css"  >
+    </head>
+    <body>
+        <script src="zodiakSimbolMain.js"></script>
+        <form class="form-zodiac">
+            <fieldset class="form-zodiac__content">
+                <legend>Введите ваше день рождение</legend>
+                <label for="day">День рождения:</label>
+                <input type="text"  name="day" id="day" required/><!-- comment -->
+                <label for="month">Месяц рождения:</label>
+                <input type="text" name="month" id="month" required/>
+                <input onclick=" identifyZodiaSign()" id="butResult" type="button" value="Узнать знак задиака"/>
+            </fieldset>
+        </form>
+        <div id="result"></div>
+    </body>
+
+</html>
