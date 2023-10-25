@@ -63,19 +63,5 @@ function getMonth() {
        valInputMonth =  "май";
     }
     validationField();
-    return valInputMonth;
 };
-
-function validationField(){
-    let fieldMonth = document.getElementById("month");
-    const maxLength=2;
-
-    if(fieldMonth.value[0] === "0" || fieldMonth.value[0]==="1"){
-          fieldMonth.addEventListener("input[2]", function( ){
-            if(this.value.length > maxLength)
-            {
-                this.value=this.value.slice(0, maxLength);
-            }
-            });
-    }
 }
